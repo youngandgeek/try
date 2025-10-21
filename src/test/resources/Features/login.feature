@@ -1,8 +1,9 @@
 
   Feature: feature to test login functionality
-    @SmokeTest
+    #@SmokeTest
     Scenario: Check login is successful with valid credentials
-      Given user is on Login Page
+      Given browser is open
+      And user is on Login Page
       When  user enters username and password
       And clicks on Login Button
       Then user is navigated to Home Page
